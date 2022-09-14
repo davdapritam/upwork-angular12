@@ -1,0 +1,587 @@
+@font-face {
+    font-family: voyage;
+    src: url("../../assets/fonts/Voyage-Regular.otf") format("opentype");
+}
+
+.fnt{
+    font-family: "voyage";
+}
+
+.artTleFnt{
+    font-family:Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
+/* NAVBAR CSS */
+.navbar{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    /* border: 2px solid black; */
+    background-color: #f7f8f3;
+}
+
+.section1{
+    margin-top: 40px;
+    /* border: 2px solid black; */
+    width: 40%;
+}
+
+.category1{
+    margin-left: 30px;
+    display: flex;
+    padding: 6px;
+}
+
+.category1 p{
+    margin: 0px 0px;    
+    margin-right: 20px;
+    font-size: 11px;
+    cursor: pointer;
+    color: #3d3d3d;
+}
+.category1 p:hover{
+    font-weight: bold;
+}
+
+.category2{
+    margin-left: 30px;
+    display: flex;
+    padding: 6px;
+}
+
+.category2 p{
+    margin: 0px 0px;    
+    margin-right: 20px;
+    font-size: 11px;
+    cursor: pointer;
+    color: #3d3d3d;
+}
+.category2 p:hover{
+    font-weight: bold;
+}
+
+.section2{
+    /* border: 2px solid black; */
+    width: 15%;
+    height: 100px;
+}
+
+.section2 p{
+    margin: 0px 0px;
+}
+
+.section3{
+    /* border: 2px solid black; */
+    width: 40%;
+    height: 120px;
+    display: flex;
+}
+
+.s3category1{
+    margin-left: 30px;
+    display: flex;
+    padding: 6px;
+    position: absolute;
+    right: 10px;
+}
+
+.s3category1 p{
+    margin: 0px 0px;
+    margin-right: 25px;
+    font-size: 11px;
+    cursor: pointer;
+    color: #3d3d3d;
+}
+.s3category1 p:hover{
+    font-weight: bold;
+}
+
+.s3category2{
+    margin-left: 30px;
+    display: flex;
+    padding: 6px;
+    position: absolute;
+    right: 16px;
+    top: 50px;
+}
+
+.s3category2 p{
+    margin: 0px 0px;    
+    margin-right: 30px;
+    font-size: 12px;
+    cursor: pointer;
+    color: #3d3d3d;
+}
+.s3category2 p:hover{
+    font-weight: bold;
+}
+
+.fa-solid{
+    position: absolute;
+    right: 16px;
+}
+
+/* Main Section */
+
+.mainSection{
+    width: 100%;
+}
+
+.alignCenter{
+    margin-top: 40px;
+}
+
+.alignCenter p{
+    margin: 0px 0px;
+}
+
+.article{
+    width: 50%;
+    margin-top: 30px;
+}
+
+.category{
+    font-weight: 50;
+    font-size: 10px;
+}
+
+.articleHeading{
+    font-size: 50px;
+}
+
+.article img{
+    width: 100%;
+}
+
+.descArticle{
+    margin-top: 40px;
+    font-weight: lighter;
+    display: flex;
+    text-align: center;
+}
+
+.articleRefer{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin: 30px;
+}
+
+.article1 img{
+    width: 100%;
+    object-fit: contain;
+}
+.article2 img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.mrg{
+    margin: 20px;
+}
+
+.description{
+    width: 50%;
+    margin: 20px;
+}
+
+.description p{
+    margin-top: 20px;
+    font-size: 13px;
+    font-weight:300;
+}
+
+.description img{
+    margin-top: 40px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.writers{
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebe4dc;
+}
+
+.writerDesc{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.imgCircle img{
+    border-radius: 70px;
+    width: 150px;
+}
+
+.descWriter{
+    padding:30px;
+}
+
+.bottomSection{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navigationBar{
+    margin-top: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigationBar p{
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.articleImgs{
+    /* margin-top: 20px; */
+    max-width: 98%;
+  margin: auto;
+  columns: 3 360px;
+  column-gap: 35px;
+    padding: 25px;
+}
+
+.img1{
+    overflow: auto;
+}
+
+.imgSize{
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.boxmargin{
+    margin: 5px;
+}
+
+.articleImgs{
+    display: flex;
+    width: 94%;
+    margin-top: 20px;
+}
+
+.articleimgWidth{
+    width: 100%;
+}
+
+.article1{
+    width: 50%;
+}
+
+.article2{
+    width: 50%;
+    margin-left: 40px;
+}
+
+.articleTitle{
+    margin-top: 15px;
+}
+
+.articleTitle p{
+    font-size: 20px;
+    color: #0f0f0f;
+}
+
+.articleDesc{
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.articleCate p{
+    color: #c9c9ca;
+    font-size: 11px;
+    margin-bottom: 70px;
+
+}
+
+.writerDescription{
+    font-size: 15px;
+}
+
+.footer{
+    background-color: #f7f8f3;
+    display: flex;
+    width: 100%;
+}
+
+.footerNav{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+}
+
+.leftPart{
+    width: 40%;
+    margin-left: 30px;
+    display: flex;
+}
+
+.abt{
+    display: flex;
+}
+
+.stack p{
+    font-size: 10px;
+    line-height: 8px;
+    cursor: pointer;
+}
+
+.stack p:hover{
+    font-weight: bold;
+}
+
+.list p{
+    font-size: 10px;
+    line-height: 8px;
+    cursor: pointer;
+}
+.list p:hover{
+    font-weight: bold;
+}
+
+.logoPart{
+    width: 20%;
+}
+
+.rightPart{
+    position: absolute;
+    right: 20px;
+    width: 17%;
+}
+
+.email{
+    margin-top: 35px;
+}
+
+.emailFnt{
+    font-size: 11px;
+    position: absolute;
+    right: 40px;
+}
+
+.icons{
+    position: absolute;
+    right: 0px;
+}
+
+.fa-brands{
+    margin: 10px;
+}
+
+
+/* carousel */
+
+.shopArticle{
+    background-color: #f7f8f3;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.shopArctHead{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shopArctHead p{
+    margin: 0px 0px;
+}
+
+.carousel-item{
+    display: flex;
+}
+
+.card{
+    margin: 20px;
+    border: 0px;
+}
+
+.card-body{
+    background-color: #f7f8f3;
+    padding: 0px 0px;
+}
+.brandPrice{
+    display: flex;
+    margin-top: 20px;
+}
+.brandName{
+    margin: 0px 0px;
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.price{
+    position: absolute;
+    right: 0px;
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.cart-text{
+    margin: 5px 0px;
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.cart{
+    margin-top: 13px;
+    background-color: white;
+    width: 100%;
+    border-radius: 0px;
+    font-size: 10px;
+    font-weight: 300;
+    padding: 10px;
+}
+
+.cart:hover{
+    background-color: white;
+}
+
+
+/* CAUROSEL */
+/* .carousel{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-inner{
+    width: 100%;
+    display: flex;
+    margin-left: 60px;
+}
+
+.carousel-control-prev{
+    width: 60px;
+}
+.carousel-control-next{
+    width: 60px;
+}
+
+.previousIcon{
+    color: black;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 41px;
+    margin-left: 24px;
+}
+
+.w-100{
+    display: flex;
+}
+
+.nextIcon{
+    color: black;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-right: -12px;
+} */
+
+
+/* NEW COURSEL */
+
+.w-100{
+    display: flex;
+    justify-content: center;
+}
+
+
+@media only screen and (max-width: 780px) {
+
+    .article1{
+        width: 100%;
+        padding: 30px;
+    }
+
+    .articleTitle p{
+        font-size: 25px;
+    }
+
+    .articleDesc{
+        font-size: 18px;
+    }
+
+    .rightPart{
+        width: 30%;
+    }
+
+    .article{
+        width: 60%;
+    }
+
+    .rightPart{
+        margin-right: -550px;
+    }
+
+    .descArticle p{
+        font-size: 18px;
+    }
+
+    .imgSize{
+        max-height: 900px;
+    }
+
+    .articleRefer{
+        flex-direction: column;
+    }
+
+    .articleImgs{
+        /* max-height: 500px; */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article2{
+        width: 100%;
+        margin-left: 0px;
+        padding: 30px;
+    }
+
+    .description{
+        width: 60%;
+    }
+    
+    .description p{
+        font-size: 18px;
+    }
+
+    .writerDescription{
+        font-size: 18px;
+    }
+
+    .writerDesc{
+        width: 60%;
+    }
+
+    .img1{
+        padding: 20px;
+    }
+}

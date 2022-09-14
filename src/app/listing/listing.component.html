@@ -1,0 +1,341 @@
+<!-- navbar section -->
+<div class="navbar">
+    <div class="section1">
+        <div class="category1">
+            <p>WOMEN</p>
+            <p>MEN</p>
+            <p>KIDS</p>
+        </div>
+
+        <div class="category2">
+            <p>SHOP</p>
+            <p>COUTURE</p>
+            <p>DESIGNERS</p>
+            <p>STYLISH</p>
+            <p>PERSONAL SHOPPERS</p>
+            <p>EXPLORE</p>
+        </div>
+    </div>
+
+    <div class="section2">
+        <p class="fnt" style="font-size: 40px;">Atelier</p>
+    </div>
+
+    <div class="section3">
+        <div class="s3category1">
+            <p>EN/GBP</p>
+            <p>ACCOUNT</p>
+            <p>MESSAGE(3)</p>
+            <p>WISHLIST</p>
+            <p>BAG(1)</p>
+        </div>
+
+        <div class="s3category2">
+            <p>SEARCH</p>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+</div>
+
+<!-- Image Section -->
+
+<div class="imageSection">
+    <img src="../../assets/Screenshot 2022-09-12 at 2.08.50 AM.png" alt="">
+</div>
+
+<!-- Article Section -->
+<div class="articleSection">
+    <div class="innerBox">
+        <div class="headingFeature">
+            <p class="featured fnt">Featured</p>
+        </div>
+
+        <div class="articleBox">
+            <div class="article1">
+
+                <!-- <img class="articleimgWidth" src="{{ this.imgLink }}" alt=""> -->
+                <img class="articleimgWidth" src="../../assets/Screenshot 2022-09-12 at 2.24.13 AM.png" alt="">
+                <div class="articleTitle fnt">
+                    <p>{{ this.artTitle1 }}</p>
+                </div>
+
+                <div class="articleDesc">
+                    <p>{{ this.desc1 }}</p>
+                </div>
+
+                <div class="articleCate">
+                    <p>ARTICLE CATEGORY / ARTICLE CATEGORY</p>
+                </div>
+            </div>
+
+            <div class="article2">
+                <!-- <img class="articleimgWidth" src="{{ this.imgLink }}" alt=""> -->
+                <img class="articleimgWidth" src="../../assets/Screenshot 2022-09-12 at 2.24.28 AM.png" alt="">
+                <div class="articleTitle fnt">
+                    <p>{{ this.artTitle1 }}</p>
+                </div>
+
+                <div class="articleDesc">
+                    <p>{{ this.desc1 }}
+                    </p>
+                </div>
+
+                <div class="articleCate">
+                    <p>ARTICLE CATEGORY / ARTICLE CATEGORY</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Images Section -->
+
+<div class="bottomSection">
+    <div class="navigationBar">
+        <div id="material-tabs">
+            <a id="tab1-tab" href="#tab1" class="active">ALL</a>
+            <a id="tab2-tab" href="#tab2">STYLES</a>
+            <a id="tab3-tab" href="#tab3">NEWS</a>
+            <a id="tab4-tab" href="#tab4">PRESS</a>
+            <span class="yellow-bar"></span>
+
+        </div>
+    </div>
+
+    <div class="grid-wrapper big">
+        <div class="img1" *ngFor="let item of this.data">
+            <div class="boxmargin" (click)="onClick(item.id)">
+                <div class="imgSize">
+
+                    <img class="articleimgWidth" src="{{ item.coverImage }}" alt="">
+                </div>
+                <!-- <img class="articleimgWidth" src="../../assets/Screenshot 2022-09-12 at 2.58.50 AM.png" alt=""> -->
+                <div class="articleTitle fnt">
+                    <p>{{ item.titleEn }}</p>
+                </div>
+
+                <div class="articleDesc">
+                    <p>{{ item.description_en }}</p>
+                </div>
+
+                <div class="articleCate">
+                    <p>STYLE / NEWS</p>
+                </div>
+            </div>
+        </div>
+        <div class="img1">
+            <div class="boxmargin">
+                <div class="imgSize">
+                    <img class="articleimgWidth" src="../../assets/Screenshot 2022-09-12 at 2.59.32 AM.png" alt="">
+                </div>
+                <div class="articleTitle">
+                    <p>Article Title</p>
+                </div>
+
+                <div class="articleDesc">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, possimus sit sed at velit itaque!
+                    </p>
+                </div>
+
+                <div class="articleCate">
+                    <p>STYLE / NEWS</p>
+                </div>
+            </div>
+        </div>
+        <div class="img1">
+            <div class="boxmargin">
+                <div class="imgSize">
+                    <img class="articleimgWidth" src="../../assets/Screenshot 2022-09-12 at 3.00.37 AM.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="articleTitle">
+                        <p>Article Title</p>
+                    </div>
+
+                    <div class="articleDesc">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, possimus sit sed at velit
+                            itaque!</p>
+                    </div>
+
+                    <div class="articleCate">
+                        <p>STYLE / NEWS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="img1">
+            <div class="boxmargin">
+                <div class="imgSize">
+                    <img class="articleimgWidth" src="../../assets/Screenshot 2022-09-12 at 2.59.03 AM.png" alt="">
+                </div>
+                <div class="articleTitle">
+                    <p>Article Title</p>
+                </div>
+
+                <div class="articleDesc">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, possimus sit sed at velit itaque!
+                    </p>
+                </div>
+
+                <div class="articleCate">
+                    <p>STYLE / NEWS</p>
+                </div>
+            </div>
+        </div>
+        <div class="img1">
+            <div class="boxmargin">
+                <div class="imgSize">
+                    <img class="articleimgWidth" src="../../assets/Screenshot 2022-09-12 at 2.59.44 AM.png" alt="">
+                </div>
+                <div class="articleTitle">
+                    <p>Article Title</p>
+                </div>
+
+                <div class="articleDesc">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, possimus sit sed at velit itaque!
+                    </p>
+                </div>
+
+                <div class="articleCate">
+                    <p>STYLE / NEWS</p>
+                </div>
+            </div>
+        </div>
+        <div class="img1">
+            <div class="boxmargin">
+                <div class="imgSize">
+                    <img class="articleimgWidth" src="../../assets/Screenshot 2022-09-12 at 2.59.56 AM.png" alt="">
+                </div>
+                <div class="articleTitle">
+                    <p>Article Title</p>
+                </div>
+
+                <div class="articleDesc">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, possimus sit sed at velit itaque!
+                    </p>
+                </div>
+
+                <div class="articleCate">
+                    <p>STYLE / NEWS</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="img1">
+            <div class="boxmargin">
+                <div class="imgSize">
+                    <img class="articleimgWidth" src="../../assets/Screenshot 2022-09-12 at 2.59.16 AM.png" alt="">
+                </div>
+                <div class="articleTitle">
+                    <p>Article Title</p>
+                </div>
+
+                <div class="articleDesc">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, possimus sit sed at velit itaque!
+                    </p>
+                </div>
+
+                <div class="articleCate">
+                    <p>STYLE / NEWS</p>
+                </div>
+            </div>
+        </div>
+        <div class="img1">
+            <div class="boxmargin">
+                <div class="imgSize">
+                    <img class="articleimgWidth" src="../../assets/Screenshot 2022-09-12 at 3.00.50 AM.png" alt="">
+                </div>
+                <div class="articleTitle">
+                    <p>Article Title</p>
+                </div>
+
+                <div class="articleDesc">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, possimus sit sed at velit itaque!
+                    </p>
+                </div>
+
+                <div class="articleCate">
+                    <p>STYLE / NEWS</p>
+                </div>
+            </div>
+        </div>
+        <div class="img1">
+            <div class="boxmargin">
+                <div class="imgSize">
+                    <img class="articleimgWidth" src="../../assets/Screenshot 2022-09-12 at 3.01.04 AM.png" alt="">
+                </div>
+                <div class="articleTitle">
+                    <p>Article Title</p>
+                </div>
+                <div class="articleDesc">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, possimus sit sed at velit itaque!
+                    </p>
+                </div>
+                <div class="articleCate">
+                    <p>STYLE / NEWS</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- FOOTER -->
+
+<div class="footer">
+    <div class="footerNav">
+        <div class="leftPart">
+            <div class="service">
+                <p style="font-size:12px; font-weight: bold;">ABOUT & SERVICE</p>
+
+                <div class="abt">
+                    <div class="stack">
+                        <p>ABOUT MN ATELIER</p>
+                        <p>FRONT ROW</p>
+                        <p>CAREERS</p>
+                        <p>COUTURE</p>
+                        <p>STYLE LOOKS</p>
+                    </div>
+                    <div class="stack mx-3">
+                        <p>CROWDFUNDING</p>
+                        <p>DESIGNERS</p>
+                        <p>STYLISTS</p>
+                        <p>PERSONAL SHOPPERS</p>
+                        <p>STYLE & NEWS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="customerCare">
+                <p style="font-size:12px; font-weight: bold;">CUSTOMER CARE</p>
+                <div class="list">
+                    <p>CONTACT US</p>
+                    <p>HELP & FAQS</p>
+                    <p>SHIPPING & RETURNS</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="logoPart">
+            <p>LOGO</p>
+        </div>
+
+        <div class="rightPart">
+            <p style="font-size:12px; font-weight: bold; position: absolute; right: 20px;">SIGN UP FOR OUR NEWSLETTER
+            </p>
+            <div class="email" style="display: flex;">
+                <p class="emailFnt">ENTER EMAIL</p>
+                <i class="fa-sharp fa-solid fa-arrow-right"></i>
+            </div>
+            <hr style="border-color: black; margin-top: 25px;">
+
+            <div class="icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-pinterest-p"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+        </div>
+    </div>
+</div>
