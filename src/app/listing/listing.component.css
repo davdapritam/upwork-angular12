@@ -1,70 +1,78 @@
 /* NAVBAR CSS */
-.navbar{
+
+.artTleFnt{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
     display: flex;
     width: 100%;
     height: 150px;
+    overflow: hidden;
     /* border: 2px solid black; */
     background-color: #f7f8f3;
 }
 
-.section1{
+.section1 {
     margin-top: 40px;
     /* border: 2px solid black; */
     width: 40%;
 }
 
-.category1{
+.category1 {
     margin-left: 30px;
     display: flex;
     padding: 6px;
 }
 
-.category1 p{
-    margin: 0px 0px;    
+.category1 p {
+    margin: 0px 0px;
     margin-right: 20px;
     font-size: 11px;
     cursor: pointer;
     color: #3d3d3d;
 }
-.category1 p:hover{
+
+.category1 p:hover {
     font-weight: bold;
 }
 
-.category2{
+.category2 {
     margin-left: 30px;
     display: flex;
     padding: 6px;
 }
 
-.category2 p{
-    margin: 0px 0px;    
+.category2 p {
+    margin: 0px 0px;
     margin-right: 20px;
     font-size: 11px;
     cursor: pointer;
     color: #3d3d3d;
 }
-.category2 p:hover{
+
+.category2 p:hover {
     font-weight: bold;
 }
 
-.section2{
+.section2 {
     /* border: 2px solid black; */
     width: 15%;
     height: 100px;
 }
 
-.section2 p{
+.section2 p {
     margin: 0px 0px;
 }
 
-.section3{
+.section3 {
     /* border: 2px solid black; */
     width: 40%;
     height: 120px;
     display: flex;
 }
 
-.s3category1{
+.s3category1 {
     margin-left: 30px;
     display: flex;
     padding: 6px;
@@ -72,18 +80,19 @@
     right: 10px;
 }
 
-.s3category1 p{
+.s3category1 p {
     margin: 0px 0px;
     margin-right: 25px;
     font-size: 11px;
     cursor: pointer;
     color: #3d3d3d;
 }
-.s3category1 p:hover{
+
+.s3category1 p:hover {
     font-weight: bold;
 }
 
-.s3category2{
+.s3category2 {
     margin-left: 30px;
     display: flex;
     padding: 6px;
@@ -92,24 +101,25 @@
     top: 50px;
 }
 
-.s3category2 p{
-    margin: 0px 0px;    
+.s3category2 p {
+    margin: 0px 0px;
     margin-right: 30px;
     font-size: 12px;
     cursor: pointer;
     color: #3d3d3d;
 }
-.s3category2 p:hover{
+
+.s3category2 p:hover {
     font-weight: bold;
 }
 
-.fa-solid{
+.fa-solid {
     position: absolute;
     right: 16px;
 }
 
 /* Main Section */
-.imageSection{
+.imageSection {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -122,14 +132,14 @@
 
 /* ARTICLE SECTION */
 
-.articleSection{
+.articleSection {
     width: 100%;
     display: flex;
     justify-content: center;
     background-color: #f7f8f3;
 }
 
-.innerBox{
+.innerBox {
     width: 100%;
     display: flex;
     align-items: center;
@@ -140,44 +150,45 @@
     font-family: voyage;
     src: url("../../assets/fonts/Voyage-Regular.otf") format("opentype");
 }
-.featured{
+
+.featured {
     margin-top: 35px;
     font-size: 35px;
 }
 
-.fnt{
+.fnt {
     font-family: "voyage";
 }
 
-.articleBox{
+.articleBox {
     display: flex;
     width: 94%;
     margin-top: 20px;
 }
 
-.articleimgWidth{
+.articleimgWidth {
     width: 100%;
 }
 
-.article1{
+.article1 {
     width: 50%;
 }
 
-.article2{
+.article2 {
     width: 50%;
     margin-left: 40px;
 }
 
-.articleTitle{
+.articleTitle {
     margin-top: 15px;
 }
 
-.articleTitle p{
+.articleTitle p {
     font-size: 20px;
     color: #0f0f0f;
 }
 
-.articleCate p{
+.articleCate p {
     color: #c9c9ca;
     font-size: 11px;
     margin-bottom: 70px;
@@ -188,16 +199,12 @@
 
 /* BOTTOM SECTION */
 
-.bottomSection{
+.bottomSection {
     width: 100%;
     margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
-.navigationBar{
+.navigationBar {
     width: 100%;
     display: flex;
     align-items: center;
@@ -210,24 +217,24 @@
 }
 
 .tab-content {
-    padding:25px;
+    padding: 25px;
 }
 
 #material-tabs {
     position: relative;
     display: block;
-  padding:0;
+    padding: 0;
     /* border-bottom: 1px solid #e0e0e0; */
 }
 
 #material-tabs>a {
     position: relative;
- display:inline-block;
+    display: inline-block;
     text-decoration: none;
     padding: 22px;
     text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 13px;
+    font-weight: 300;
     justify-content: center;
     color: #424f5a;
     text-align: center;
@@ -236,7 +243,7 @@
 
 #material-tabs>a.active {
     font-weight: 700;
-    outline:none;
+    outline: none;
 }
 
 #material-tabs>a:not(.active):hover {
@@ -246,7 +253,7 @@
 
 @media only screen and (max-width: 520px) {
     .nav-tabs#material-tabs>li>a {
-            font-size: 11px;
+        font-size: 11px;
     }
 }
 
@@ -262,130 +269,148 @@
     -webkit-transition: left .2s ease;
 }
 
-#tab1-tab.active ~ span.yellow-bar {
+#tab1-tab.active~span.yellow-bar {
     left: 33px;
     width: 160px;
 }
 
-#tab2-tab.active ~ span.yellow-bar {
-    left:280px;
+#tab2-tab.active~span.yellow-bar {
+    left: 280px;
     width: 160px;
 }
 
-#tab3-tab.active ~ span.yellow-bar {
-    left: 535px;
+#tab3-tab.active~span.yellow-bar {
+    left: 525px;
     width: 160px;
 }
 
-#tab4-tab.active ~ span.yellow-bar {
-    left:780px;
+#tab4-tab.active~span.yellow-bar {
+    left: 770px;
     width: 160px;
 }
 
-.grid-wrapper{
-    max-width: 98%;
-  margin: auto;
-  columns: 3 360px;
-  column-gap: 35px;
-    padding: 25px;
-
+.grid-wrapper {
+    width: 100%;
+    columns: 3;
+    margin-left: 11px;
 }
 
-
-.articleDesc{
-    font-size: 13px;
-    font-weight: 300;
+#tab2 > grid-wrapper {
+    width: 100%;
+    columns: 3;
+    margin-left: 11px;
 }
 
-.img1{
+.img2 {
+    max-width: 430px;
     height: auto;
     position: relative;
     overflow: auto;
 }
 
-.imgSize{
+
+.articleDesc {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.img1 {
+    max-width: 430px;
+    height: auto;
+    position: relative;
+    overflow: auto;
+}
+
+.imgSize {
     max-height: 500px;
     overflow: hidden;
 }
 
-.imgSize > img{
+.imgSize>img {
+    max-width: 420px;
+    width: 100%;
     object-fit: cover;
 }
 
-.boxmargin{
+.boxmargin {
     margin: 5px;
+}
+
+.artTleFnt{
+    font-family: 'Montserrat', sans-serif;
 }
 
 
 /* Footer */
 
-.footer{
+.footer {
     background-color: #f7f8f3;
     display: flex;
     width: 100%;
 }
 
-.footerNav{
+.footerNav {
     margin-top: 50px;
     width: 100%;
     display: flex;
 }
 
-.leftPart{
+.leftPart {
     width: 40%;
     margin-left: 30px;
     display: flex;
 }
 
-.abt{
+.abt {
     display: flex;
 }
 
-.stack p{
+.stack p {
     font-size: 10px;
     line-height: 8px;
     cursor: pointer;
 }
 
-.stack p:hover{
+.stack p:hover {
     font-weight: bold;
 }
 
-.list p{
+.list p {
     font-size: 10px;
     line-height: 8px;
     cursor: pointer;
 }
-.list p:hover{
+
+.list p:hover {
     font-weight: bold;
 }
 
-.logoPart{
+.logoPart {
     width: 20%;
 }
 
-.rightPart{
+.rightPart {
     position: absolute;
     right: 20px;
     width: 17%;
 }
 
-.email{
+.email {
     margin-top: 35px;
 }
 
-.emailFnt{
+.emailFnt {
     font-size: 11px;
     position: absolute;
     right: 40px;
 }
 
-.icons{
+.icons {
     position: absolute;
     right: 0px;
 }
 
-.fa-brands{
+.fa-brands {
     margin: 10px;
 }
 
@@ -393,24 +418,400 @@
 
 @media only screen and (max-width: 817px) {
 
-    .article1{
+    .article1 {
         width: 100%;
         padding: 30px;
     }
 
-    .articleBox{
+    .articleBox {
         display: flex;
         flex-direction: column;
     }
 
-    .article2{
+    .article2 {
         width: 100%;
         margin-left: 0px;
         padding: 30px;
     }
 
-    .img1{
-        padding: 20px;
+    /* .grid-wrapper{
+        max-width: 98%;
+        margin: auto;
+        columns: 2 270px;
+        column-gap: 25px;
+          padding: 25px;
+    } */
+}
+
+@media only screen and (max-width: 680px) {
+    .grid-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article1 {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .articleBox {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article2 {
+        width: 100%;
+        margin-left: 0px;
+        padding: 30px;
     }
 }
 
+@media only screen and (max-width: 980px) {
+    #tab1-tab.active~span.yellow-bar {
+        left: 26px;
+        width: 100px;
+    }
+    
+    #tab2-tab.active~span.yellow-bar {
+        left: 185px;
+        width: 100px;
+    }
+    
+    #tab3-tab.active~span.yellow-bar {
+        left: 355px;
+        width: 100px;
+    }
+    
+    #tab4-tab.active~span.yellow-bar {
+        left: 523px;
+        width: 100px;
+    }
+
+    #material-tabs>a {
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        padding: 22px;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 300;
+        justify-content: center;
+        color: #424f5a;
+        text-align: center;
+        margin: 0px 40px;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    #tab1-tab.active~span.yellow-bar {
+        left: 7px;
+        width: 80px;
+    }
+    
+    #tab2-tab.active~span.yellow-bar {
+        left: 110   px;
+        width: 80px;
+    }
+    
+    #tab3-tab.active~span.yellow-bar {
+        left: 224px;
+        width: 80px;
+    }
+    
+    #tab4-tab.active~span.yellow-bar {
+        left: 338px;
+        width: 80px;
+    }
+
+    #material-tabs>a {
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        padding: 22px;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 300;
+        justify-content: center;
+        color: #424f5a;
+        text-align: center;
+        margin: 0px 12px;
+    }
+}
+
+.tab-content{
+    padding: 0px 0px;
+    overflow: hidden;
+    width: 100%;
+}
+
+#tab1{
+    overflow: hidden;
+    margin-top: 20px;
+    width: 100%;
+}
+.tab2{
+    overflow: hidden;
+    width: 100%;
+}
+.tab3{
+    overflow: hidden;
+    width: 100%;
+}
+.tab4{
+    overflow: hidden;
+    width: 100%;
+}
+
+.masonary-item{
+    width: 29%; 
+    margin: 0px 20px;
+}
+.masonaryBlock{
+    width: 100%; 
+    margin-left: 2%;
+}
+
+.imgBox{
+    max-height: 500px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 1275px) {
+
+    .masonary-item{
+        margin: 0px 20px;
+    }
+
+}
+
+@media only screen and (max-width: 1170px) {
+
+    .masonary-item{
+        margin: 0px 19px;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .masonary-item{
+        margin: 0px 15px;
+    }
+
+}
+
+@media only screen and (max-width: 825px) {
+
+    .masonary-item{
+        margin: 1.5%;
+    }
+
+    .articleTitle p{
+        font-size: 17px;
+    }
+
+    .articleDesc p{
+        font-size:11px ;
+    }
+
+    .articleCate p{
+        font-size: 9px;
+    }
+
+}
+
+@media only screen and (max-width: 590px) {
+
+    .masonaryBlock{
+        margin-left: 3%;
+    }
+    .masonary-item{
+        width: 40%; 
+        margin: 18px;
+    }
+
+    .articleTitle p{
+        font-size: 18px;
+    }
+
+    .articleDesc p{
+        font-size:12px ;
+    }
+
+    .articleCate p{
+        font-size: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 435px) {
+
+    .masonaryBlock{ 
+    margin-left: 25px;
+    }
+    .masonary-item{
+        width: 80%; 
+    }
+
+    .articleTitle p{
+        font-size: 18px;
+    }
+
+    .articleDesc p{
+        font-size:12px ;
+    }
+
+    .articleCate p{
+        font-size: 10px;
+    }
+
+    #material-tabs>a {
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        padding: 22px;
+        text-transform: uppercase;
+        font-size: 11px;
+        font-weight: 300;
+        justify-content: center;
+        color: #424f5a;
+        text-align: center;
+        margin: 0px 7px;
+    }
+
+    #tab1-tab.active~span.yellow-bar {
+        left: 3px;
+        width: 80px;
+    }
+    
+    #tab2-tab.active~span.yellow-bar {
+        left: 90px;
+        width: 80px;
+    }
+    
+    #tab3-tab.active~span.yellow-bar {
+        left: 185px;
+        width: 80px;
+    }
+    
+    #tab4-tab.active~span.yellow-bar {
+        left: 280px;
+        width: 80px;
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+
+    .masonaryBlock{ 
+        margin-left: 20px;
+    }
+    .masonary-item{
+        width: 80%; 
+    }
+
+    .articleTitle p{
+        font-size: 18px;
+    }
+
+    .articleDesc p{
+        font-size:12px ;
+    }
+
+    .articleCate p{
+        font-size: 10px;
+    }
+
+    #material-tabs>a {
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        padding: 20px;
+        text-transform: uppercase;
+        font-size: 10px;
+        font-weight: 300;
+        justify-content: center;
+        color: #424f5a;
+        text-align: center;
+        margin: 0px 3px;
+    }
+
+    #tab1-tab.active~span.yellow-bar {
+        left: 2px;
+        width: 60px;
+    }
+    
+    #tab2-tab.active~span.yellow-bar {
+        left: 77px;
+        width: 60px;
+    }
+    
+    #tab3-tab.active~span.yellow-bar {
+        left: 158px;
+        width: 60px;
+    }
+    
+    #tab4-tab.active~span.yellow-bar {
+        left: 238px;
+        width: 60px;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+
+    .masonaryBlock{ 
+        margin-left: 14px;
+    }
+    .masonary-item{
+        width: 80%; 
+    }
+
+    .articleTitle p{
+        font-size: 18px;
+    }
+
+    .articleDesc p{
+        font-size:12px ;
+    }
+
+    .articleCate p{
+        font-size: 10px;
+    }
+
+    #material-tabs>a {
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        padding: 18px;
+        text-transform: uppercase;
+        font-size: 10px;
+        font-weight: 300;
+        justify-content: center;
+        color: #424f5a;
+        text-align: center;
+        margin: 0px 0px;
+    }
+
+    #tab1-tab.active~span.yellow-bar {
+        left: 2px;
+        width: 55px;
+    }
+    
+    #tab2-tab.active~span.yellow-bar {
+        left: 65px;
+        width: 55px;
+    }
+    
+    #tab3-tab.active~span.yellow-bar {
+        left: 135px;
+        width: 55px;
+    }
+    
+    #tab4-tab.active~span.yellow-bar {
+        left: 203px;
+        width: 55px;
+    }
+
+}

@@ -6,8 +6,9 @@ body::-webkit-scrollbar {
   
   /* Hide scrollbar for IE, Edge and Firefox */
   body {
+    margin: 0px 0px;
+    padding: 0px 0px;
+    width: 100%;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
-    display: flex;
-    align-items: center;
   }

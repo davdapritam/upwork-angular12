@@ -53,8 +53,8 @@
         <div class="articleBox">
             <div class="article1">
 
-                <!-- <img class="articleimgWidth" src="{{ this.imgLink }}" alt=""> -->
-                <img class="articleimgWidth" src="../../assets/Screenshot 2022-09-12 at 2.24.13 AM.png" alt="">
+
+                <img class="articleimgWidth" src="{{ this.featureImg1 }}" alt="">
                 <div class="articleTitle fnt">
                     <p>{{ this.artTitle1 }}</p>
                 </div>
@@ -69,14 +69,14 @@
             </div>
 
             <div class="article2">
-                <!-- <img class="articleimgWidth" src="{{ this.imgLink }}" alt=""> -->
-                <img class="articleimgWidth" src="../../assets/Screenshot 2022-09-12 at 2.24.28 AM.png" alt="">
+
+                <img class="articleimgWidth" src="{{ this.featureImg2 }}" alt="">
                 <div class="articleTitle fnt">
-                    <p>{{ this.artTitle1 }}</p>
+                    <p>{{ this.artTitle2 }}</p>
                 </div>
 
                 <div class="articleDesc">
-                    <p>{{ this.desc1 }}
+                    <p>{{ this.desc2 }}
                     </p>
                 </div>
 
@@ -93,192 +93,225 @@
 <div class="bottomSection">
     <div class="navigationBar">
         <div id="material-tabs">
-            <a id="tab1-tab" href="#tab1" class="active">ALL</a>
-            <a id="tab2-tab" href="#tab2">STYLES</a>
-            <a id="tab3-tab" href="#tab3">NEWS</a>
-            <a id="tab4-tab" href="#tab4">PRESS</a>
+            <a id="tab1-tab" href="#tab1" class="active artTleFnt" (click)="tap1()">ALL</a>
+            <a id="tab2-tab" class="artTleFnt" href="#tab2" (click)="tap2()">STYLES</a>
+            <a id="tab3-tab" class="artTleFnt" href="#tab3" (click)="tap3()">NEWS</a>
+            <a id="tab4-tab" class="artTleFnt" href="#tab4" (click)="tap4()">PRESS</a>
             <span class="yellow-bar"></span>
 
         </div>
     </div>
 
-    <div class="grid-wrapper big">
-        <div class="img1" *ngFor="let item of this.data">
-            <div class="boxmargin" (click)="onClick(item.id)">
-                <div class="imgSize">
 
-                    <img class="articleimgWidth" src="{{ item.coverImage }}" alt="">
-                </div>
-                <!-- <img class="articleimgWidth" src="../../assets/Screenshot 2022-09-12 at 2.58.50 AM.png" alt=""> -->
-                <div class="articleTitle fnt">
-                    <p>{{ item.titleEn }}</p>
-                </div>
 
-                <div class="articleDesc">
-                    <p>{{ item.description_en }}</p>
-                </div>
+    <div class="tab-content" *ngIf="this.tab1 == true">
+        <div id="tab1">
+            <ngx-masonry class="masonaryBlock" [options]="masonryOptions" [ordered]="true">
+                <div ngxMasonryItem class="masonary-item" (click)="onClick(item)" [prepend]="item[0]"
+                    *ngFor="let item of this.data">
+                    <ng-container>
+                        <div class="imgBox">
+                            <img class="imageCover" src="{{ item.coverImage }}" style="object-fit: cover;" width="100%"
+                                alt="">
+                        </div>
+                        <div class="articleTitle fnt">
+                            <p>{{ item.titleEn }}</p>
+                        </div>
 
-                <div class="articleCate">
-                    <p>STYLE / NEWS</p>
-                </div>
-            </div>
-        </div>
-        <div class="img1">
-            <div class="boxmargin">
-                <div class="imgSize">
-                    <img class="articleimgWidth" src="../../assets/Screenshot 2022-09-12 at 2.59.32 AM.png" alt="">
-                </div>
-                <div class="articleTitle">
-                    <p>Article Title</p>
-                </div>
+                        <div class="articleDesc">
+                            <p>{{ item.description_en }}</p>
+                        </div>
 
-                <div class="articleDesc">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, possimus sit sed at velit itaque!
-                    </p>
+                        <div class="articleCate">
+                            <p class="artTleFnt">STYLE / NEWS</p>
+                        </div>
+                    </ng-container>
                 </div>
-
-                <div class="articleCate">
-                    <p>STYLE / NEWS</p>
-                </div>
-            </div>
-        </div>
-        <div class="img1">
-            <div class="boxmargin">
-                <div class="imgSize">
-                    <img class="articleimgWidth" src="../../assets/Screenshot 2022-09-12 at 3.00.37 AM.png" alt="">
-                </div>
-                <div class="content">
-                    <div class="articleTitle">
-                        <p>Article Title</p>
+            </ngx-masonry>
+            <!-- <ngx-masonry class="masonaryBlock" [options]="masonryOptions" [ordered]="true">
+                <div class="masonary-item" (click)="onClick(item)" [prepend]="item[0]" ngxMasonryItem
+                    *ngFor="let item of this.data;index as idx">
+                    <img src="{{ item.coverImage }}" style="object-fit: cover;" width="100%" alt="">
+                    <div class="articleTitle fnt">
+                        <p>{{ item.titleEn }}</p>
                     </div>
 
                     <div class="articleDesc">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, possimus sit sed at velit
-                            itaque!</p>
+                        <p>{{ item.description_en }}</p>
                     </div>
 
                     <div class="articleCate">
-                        <p>STYLE / NEWS</p>
+                        <p class="artTleFnt">STYLE / NEWS</p>
                     </div>
                 </div>
-            </div>
+            </ngx-masonry> -->
+            <!-- <div class="grid-wrapper">
+                <div class="img1" *ngFor="let item of this.data">
+                    <div class="boxmargin" (click)="onClick(item)">
+                        <div class="imgSize">
+                            <img class="image" src="{{ item.coverImage }}" alt="">
+                        </div>
+                        <div class="articleTitle fnt">
+                            <p>{{ item.titleEn }}</p>
+                        </div>
+
+                        <div class="articleDesc">
+                            <p>{{ item.description_en }}</p>
+                        </div>
+
+                        <div class="articleCate">
+                            <p class="artTleFnt">STYLE / NEWS</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
         </div>
-        <div class="img1">
-            <div class="boxmargin">
-                <div class="imgSize">
-                    <img class="articleimgWidth" src="../../assets/Screenshot 2022-09-12 at 2.59.03 AM.png" alt="">
-                </div>
-                <div class="articleTitle">
-                    <p>Article Title</p>
-                </div>
+    </div>
 
-                <div class="articleDesc">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, possimus sit sed at velit itaque!
-                    </p>
-                </div>
+    <div class="tab-content" *ngIf="this.tab2 ==true" style="padding: 0px; width: 100%;">
+        <div id="tab2">
+            <ngx-masonry class="masonaryBlock" [options]="masonryOptions" [ordered]="true">
+                <div ngxMasonryItem class="masonary-item" (click)="onClick(item)" [prepend]="item[0]"
+                    *ngFor="let item of this.styleArr">
+                    <ng-container>
+                        <div class="imgBox">
+                            <img class="imageCover" src="{{ item.coverImage }}" style="object-fit: cover;" width="100%"
+                                alt="">
+                        </div>
+                        <div class="articleTitle fnt">
+                            <p>{{ item.titleEn }}</p>
+                        </div>
 
-                <div class="articleCate">
-                    <p>STYLE / NEWS</p>
+                        <div class="articleDesc">
+                            <p>{{ item.description_en }}</p>
+                        </div>
+
+                        <div class="articleCate">
+                            <p class="artTleFnt">STYLE / NEWS</p>
+                        </div>
+                    </ng-container>
                 </div>
-            </div>
+            </ngx-masonry>
+            <!-- <div class="grid-wrapper">
+                <div class="img1" *ngFor="let item of this.newsArr">
+                    <div class="boxmargin" (click)="onClick(item)">
+                        <div class="imgSize">
+                            <img class="image" src="{{ item.coverImage }}" alt="">
+                        </div>
+                        <div class="articleTitle fnt">
+                            <p>{{ item.titleEn }}</p>
+                        </div>
+
+                        <div class="articleDesc">
+                            <p>{{ item.description_en }}</p>
+                        </div>
+
+                        <div class="articleCate">
+                            <p class="artTleFnt">STYLE / NEWS</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
         </div>
-        <div class="img1">
-            <div class="boxmargin">
-                <div class="imgSize">
-                    <img class="articleimgWidth" src="../../assets/Screenshot 2022-09-12 at 2.59.44 AM.png" alt="">
-                </div>
-                <div class="articleTitle">
-                    <p>Article Title</p>
-                </div>
+    </div>
 
-                <div class="articleDesc">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, possimus sit sed at velit itaque!
-                    </p>
-                </div>
+    <div class="tab-content" *ngIf="this.tab3==true" style="padding: 0px; width: 100%;">
+        <div id="tab3">
+            <ngx-masonry class="masonaryBlock" [options]="masonryOptions" [ordered]="true">
+                <div ngxMasonryItem class="masonary-item" (click)="onClick(item)" [prepend]="item[0]"
+                    *ngFor="let item of this.newsArr">
+                    <ng-container>
+                        <div class="imgBox">
+                            <img class="imageCover" src="{{ item.coverImage }}" style="object-fit: cover;" width="100%"
+                                alt="">
+                        </div>
+                        <div class="articleTitle fnt">
+                            <p>{{ item.titleEn }}</p>
+                        </div>
 
-                <div class="articleCate">
-                    <p>STYLE / NEWS</p>
+                        <div class="articleDesc">
+                            <p>{{ item.description_en }}</p>
+                        </div>
+
+                        <div class="articleCate">
+                            <p class="artTleFnt">STYLE / NEWS</p>
+                        </div>
+                    </ng-container>
                 </div>
-            </div>
+            </ngx-masonry>
+            <!-- <div class="grid-wrapper">
+                <div class="img1" *ngFor="let item of this.newsArr">
+                    <div class="boxmargin" *ngIf="item.articleCategory == 'news'" (click)="onClick(item)">
+                        <div class="imgSize">
+
+                            <img class="image" src="{{ item.coverImage }}" alt="">
+                        </div>
+                        <div class="articleTitle fnt">
+                            <p>{{ item.titleEn }}</p>
+                        </div>
+
+                        <div class="articleDesc">
+                            <p>{{ item.description_en }}</p>
+                        </div>
+
+                        <div class="articleCate">
+                            <p class="artTleFnt">STYLE / NEWS</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
         </div>
-        <div class="img1">
-            <div class="boxmargin">
-                <div class="imgSize">
-                    <img class="articleimgWidth" src="../../assets/Screenshot 2022-09-12 at 2.59.56 AM.png" alt="">
-                </div>
-                <div class="articleTitle">
-                    <p>Article Title</p>
-                </div>
+    </div>
 
-                <div class="articleDesc">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, possimus sit sed at velit itaque!
-                    </p>
-                </div>
+    <div class="tab-content" *ngIf="this.tab4 == true" style="padding: 0px; width: 100%;">
+        <div id="tab4">
+            <ngx-masonry class="masonaryBlock" [options]="masonryOptions" [ordered]="true">
+                <div ngxMasonryItem class="masonary-item" (click)="onClick(item)" [prepend]="item[0]"
+                    *ngFor="let item of this.pressArr">
+                    <ng-container>
+                        <div class="imgBox">
+                            <img class="imageCover" src="{{ item.coverImage }}" style="object-fit: cover;" width="100%"
+                                alt="">
+                        </div>
+                        <div class="articleTitle fnt">
+                            <p>{{ item.titleEn }}</p>
+                        </div>
 
-                <div class="articleCate">
-                    <p>STYLE / NEWS</p>
+                        <div class="articleDesc">
+                            <p>{{ item.description_en }}</p>
+                        </div>
+
+                        <div class="articleCate">
+                            <p class="artTleFnt">STYLE / NEWS</p>
+                        </div>
+                    </ng-container>
                 </div>
-            </div>
+            </ngx-masonry>
+            <!-- <div class="grid-wrapper">
+                <div class="img1" *ngFor="let item of this.pressArr">
+                    <div class="boxmargin" *ngIf="item.articleCategory == 'press'" (click)="onClick(item)">
+                        <div class="imgSize">
+                            <img class="image" src="{{ item.coverImage }}" alt="">
+                        </div>
+                        <div class="articleTitle fnt">
+                            <p>{{ item.titleEn }}</p>
+                        </div>
+
+                        <div class="articleDesc">
+                            <p>{{ item.description_en }}</p>
+                        </div>
+
+                        <div class="articleCate">
+                            <p class="artTleFnt">STYLE / NEWS</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
         </div>
-
-        <div class="img1">
-            <div class="boxmargin">
-                <div class="imgSize">
-                    <img class="articleimgWidth" src="../../assets/Screenshot 2022-09-12 at 2.59.16 AM.png" alt="">
-                </div>
-                <div class="articleTitle">
-                    <p>Article Title</p>
-                </div>
-
-                <div class="articleDesc">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, possimus sit sed at velit itaque!
-                    </p>
-                </div>
-
-                <div class="articleCate">
-                    <p>STYLE / NEWS</p>
-                </div>
-            </div>
-        </div>
-        <div class="img1">
-            <div class="boxmargin">
-                <div class="imgSize">
-                    <img class="articleimgWidth" src="../../assets/Screenshot 2022-09-12 at 3.00.50 AM.png" alt="">
-                </div>
-                <div class="articleTitle">
-                    <p>Article Title</p>
-                </div>
-
-                <div class="articleDesc">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, possimus sit sed at velit itaque!
-                    </p>
-                </div>
-
-                <div class="articleCate">
-                    <p>STYLE / NEWS</p>
-                </div>
-            </div>
-        </div>
-        <div class="img1">
-            <div class="boxmargin">
-                <div class="imgSize">
-                    <img class="articleimgWidth" src="../../assets/Screenshot 2022-09-12 at 3.01.04 AM.png" alt="">
-                </div>
-                <div class="articleTitle">
-                    <p>Article Title</p>
-                </div>
-                <div class="articleDesc">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, possimus sit sed at velit itaque!
-                    </p>
-                </div>
-                <div class="articleCate">
-                    <p>STYLE / NEWS</p>
-                </div>
-            </div>
-        </div>
-
     </div>
 </div>
+
+
 
 
 <!-- FOOTER -->
